@@ -1,0 +1,71 @@
+/* 
+Styling for tables, making them occupy 100% width of their container, collapse borders, and have a margin-bottom of 20px.
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* 
+Styling for table header cells and data cells, setting borders, padding, and text alignment.
+*/
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* 
+Styling for buttons used for various actions (create, view, edit, delete, RSVP, no RSVP).
+*/
+.createBtn, .viewBtn, .editBtn, .deleteBtn, .rsvpBtn, .norsvpBtn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 
+Styling specifically for the create button.
+*/
+.createBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* 
+Styling specifically for the edit button.
+*/
+.editBtn {
+    background-color: #36A2EB;
+    color: white;
+}
+
+/* 
+Styling specifically for the delete button.
+*/
+.deleteBtn {
+    background-color: #FF6384;
+    color: white;
+}
+
+/* 
+Styling specifically for the RSVP button.
+*/
+.rsvpBtn {
+    background-color: #FFCD56;
+    color: white;
+}
+
+/* 
+Styling specifically for the no RSVP button.
+Disables pointer events for the button.
+*/
+.norsvpBtn {
+    background-color: #808080;
+    color: white;
+    pointer-events: none;
+}

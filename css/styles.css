@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* General body styles */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Set html and body height to 100% */
+    background-image: url('../images/index.jpg'); /* Set the image as background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between; /* Align the content spaced out */
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+/* Event planner title */
+.header-title {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display:flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin:0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f8b400; /* soft yellow to stand out on the background */
+    font-weight:bold;
+}
+
+/* Title and form styles */
+h1, h2 {
+    color: #fff; /* Change text color to white or any color that stands out on the background */
+    text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center; /* Center the text */
+}
+/* Main content area */
+main {
+    flex-grow: 1; /* Allow the main content to grow and fill the space */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width:100%
+}
+
+form {
+    width: 100%; /* Set form width to 100% of its parent */
+    max-width: 600px; /* Maximum width of the form */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: none;
+    background: none;
+    border:none;
+}
+
+/* Input styles */
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="submit"],
+select {
+    margin-bottom: 10px; /* Add some space between form elements */
+}
+
+/* Adjust button styles */
+input[type="submit"] {
+    background-color: #f4cb5b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 5%;
+    border:none;
+    box-shadow: none;
+}
+
+/* Styles specifically for buttons on this page */
+.shorter-buttons {
+    width: auto; /* Width of the button is determined by its content */
+    padding: 10px 20px; /* Padding inside the button, adjust as needed */
+    margin: 0 10px; /* Margin around the button, adjust as needed */
+}
+
+/* Style for centered title */
+.centered-title {
+    text-align: center; /* Center align the title text */
+    font-size: 2em; /* Font size, adjust as needed */
+    margin-top: 20px; /* Top margin, adjust as needed */
+}
+
+/* Style for descriptive paragraph text */
+.description-text {
+    text-align: center; /* Center align the paragraph text */
+    font-size: 1em; /* Font size, adjust as needed */
+    margin-top: 20px; /* Top margin, adjust as needed */
+    margin-bottom: 10px; /* Bottom margin to leave space for buttons */
+}
+/* Styles for the buttons container */
+.buttons-container {
+    display: flex; /* Use flexbox to layout buttons */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px; /* Space above the buttons container */
+    text-align: center; /* Center the buttons container */
+}
+
+.error {
+    color: red;
+    display: none;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

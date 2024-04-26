@@ -1,0 +1,82 @@
+/* 
+This class defines styling for text input fields.
+*/
+.textfield {
+  margin: 10px 0;
+}
+
+/* 
+Styling for labels within text input fields.
+*/
+.textfield label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* 
+Styling for text input and select elements within text input fields.
+*/
+.textfield input, .textfield select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* 
+Styling for checkboxes and their labels.
+*/
+.checkbox {
+  margin: 10px 0;
+}
+
+/* 
+Styling for inline labels associated with checkboxes.
+*/
+.checkbox label {
+  display: inline;
+}
+
+/* 
+General styling for buttons.
+*/
+button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* 
+Styling for submit button.
+*/
+button[type="submit"] {
+  background-color: #f8b400;
+}
+
+/* 
+Styling for reset and generic button types.
+*/
+button[type="reset"], button[type="button"] {
+  background-color: #333;
+}
+
+/* 
+Styling for error messages.
+*/
+.error {
+  color: red;
+  display: none;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* 
+Styling for labels associated with checked checkboxes.
+*/
+input[type="checkbox"]:checked + label {
+  color: red; /* Sets label color to red when checkbox is checked */
+}

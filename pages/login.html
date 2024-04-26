@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage -->
+    <title>User Login</title>
+    
+    <!-- Link to external CSS files for styling -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/registration.css">
+    
+    <!-- Link to external JavaScript file for form validation -->
+    <script src="../scripts/validation.js"></script>
+</head>
+<body>
+
+    <!-- Header section containing the title and navigation menu -->
+    <header>
+        <h1>Event Planner</h1>  
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="../server/events.php">EVENT</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./registration.html">REGISTRATION</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form for user login -->
+    <h2>User Login</h2>
+    <form action="../server/login.php" method="POST" onsubmit="return validate_login();">
+        <!-- Link to registration page for users without an account -->
+        <p>Don't have an account? Sign up <a href="registration.html">here</a></p>
+        
+        <!-- Text input for email with associated error message -->
+        <div class="textfield">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <span class="error" id="emailError">Email address should be non-empty</span>
+        </div>
+
+        <!-- Text input for password with associated error message -->
+        <div class="textfield">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" placeholder="Password">
+            <span class="error" id="passError">Password should be non-empty</span>
+        </div>
+
+        <!-- Submit button for login -->
+        <button type="submit">Log in</button>
+    </form>
+</body>
+</html>

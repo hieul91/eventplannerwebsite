@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Title of the webpage -->
+    <title>Event Planning Form</title>
+</head>
+<body>
+    <!-- Header section containing the title and navigation menu -->
+    <header>
+        <h1>Event Planner</h1>  
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="../server/events.php">EVENT</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./registration.html">REGISTRATION</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Centered welcome title -->
+    <h2 class="centered-title"><br><br>Welcome to our Event Planning Website</h2>
+    
+    <!-- Descriptive paragraph text -->
+    <p class="description-text">
+        <br>Thank you for choosing our services.<br><br> Please log in to your account or create a free account!
+    </p>
+    
+    <!-- Button container to keep buttons in the same line -->
+    <div class="buttons-container">
+        <!-- Form with two submit buttons for sign up and log in -->
+        <form action="javascript:void(0);" method="post">
+            <input type="submit" value="Sign Up" class="shorter-buttons" onclick="location.href='registration.html';">
+            <input type="submit" value="Log In" class="shorter-buttons" onclick="location.href='login.html';">
+        </form>
+    </div>
+</body>
+</html>

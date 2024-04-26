@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage -->
+    <title>User Registration</title>
+    
+    <!-- Link to external CSS files for styling -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/registration.css">
+    
+    <!-- Link to external JavaScript file for form validation with defer attribute -->
+    <script src="../scripts/validation.js" defer></script>
+</head>
+<body>
+
+    <!-- Header section containing the title and navigation menu -->
+    <header>
+        <h1>Event Planner</h1>  
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="../server/events.php">EVENT</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./registration.html">REGISTRATION</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form for user registration -->
+    <h2>User Registration</h2>
+    <form action="../server/registration.php" method="post" onsubmit="return validate_registration();">
+        <!-- Link to login page for existing users -->
+        <p>Already a user? Sign in <a href="login.html">here</a></p>
+        
+        <!-- Text input for email with associated error message -->
+        <div class="textfield">
+            <label for="email">Email Address</label>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <span class="error" id="emailError">Email address should be non-empty with the format xyz@xyz.xyz.</span>
+        </div>
+
+        <!-- Text input for full name with associated error message -->
+        <div class="textfield">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" id="fullname" placeholder="Full name">
+            <span class="error" id="fullnameError">Full name should be non-empty.</span>
+        </div>
+
+        <!-- Text input for password with associated error message -->
+        <div class="textfield">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" placeholder="Password">
+            <span class="error" id="passError">Password should be at least 8 characters: 1 uppercase, 1 lowercase.</span>
+        </div>
+
+        <!-- Text input for confirming password with associated error message -->
+        <div class="textfield">
+            <label for="pass2">Confirm Password</label>
+            <input type="password" id="pass2" placeholder="Password">
+            <span class="error" id="pass2Error">Please retype password.</span>
+        </div>
+
+        <!-- Checkbox for subscribing to newsletter -->
+        <div class="checkbox">
+            <input type="checkbox" name="subscription" id="subscription">
+            <label for="subscription">Subscribe to our newsletter</label>
+        </div>
+
+        <!-- Submit and reset buttons for the form -->
+        <button type="submit">Sign Up</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
+
